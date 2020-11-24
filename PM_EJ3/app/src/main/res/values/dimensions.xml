@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tamanioTitulo">30dp</dimen>
+    <dimen name="separacionLateral">10dp</dimen>
+    <dimen name="separacionTop">8dp</dimen>
+    <dimen name="separacionBut">8dp</dimen>
+
+</resources>
