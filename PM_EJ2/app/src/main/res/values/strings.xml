@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Lista de productos</string>
+    <string name="nombreProducto">Aqui va el nombre del producto</string>
+    <string name="precioProducto">Aqui va el precio del producto</string>
+    <string name="nombreProductoEdit">Nombre del producto</string>
+    <string name="precioProductoEdit">Precio del producto</string>
+    <string name="swFragilEdit">Fragil</string>
+    <string name="rdButtonCaja">Caja</string>
+    <string name="rdButtonBolsa">Bolsa</string>
+    <string name="rdButtonBrick">Brick</string>
+    <string name="rdButtonPack">Pack</string>
+    <string name="rdButtonOtro">Otro</string>
+    <string name="btnEditGuardar">Guardar</string>
+    <string name="fragil">Fragilidad</string>
+    <string name="ftButton">TODO</string>
+    <string name="borrar">BORRAR</string>
+</resources>

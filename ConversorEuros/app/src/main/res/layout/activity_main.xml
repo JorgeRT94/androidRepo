@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtDolares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267" />
+
+    <EditText
+        android:id="@+id/txtEuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/euros"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <ImageButton
+        android:id="@+id/btnArg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:onClick="btnConvertirArg"
+        android:paddingHorizontal="0"
+        android:paddingVertical="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/argentina" />
+
+    <ImageButton
+        android:id="@+id/btnIng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="btnConvertirIng"
+        android:paddingHorizontal="0"
+        android:paddingVertical="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnJap"
+        app:layout_constraintStart_toEndOf="@+id/btnArg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/inglaterra" />
+
+    <ImageButton
+        android:id="@+id/btnJap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:onClick="btnConvertirJap"
+        android:paddingHorizontal="0"
+        android:paddingVertical="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/japon" />
+
+    <ImageButton
+        android:id="@+id/btnRus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:onClick="btnConvertirRus"
+        android:paddingHorizontal="0"
+        android:paddingVertical="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnArg"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rusia" />
+
+    <ImageButton
+        android:id="@+id/btnTurq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="btnConvertirTurq"
+        android:paddingHorizontal="0"
+        android:paddingVertical="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJap"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/turquia" />
+
+    <ImageButton
+        android:id="@+id/btnUsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="btnConvertirUsa"
+        android:paddingHorizontal="0"
+        android:paddingVertical="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnTurq"
+        app:layout_constraintStart_toEndOf="@+id/btnRus"
+        app:layout_constraintTop_toBottomOf="@+id/btnIng"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/usa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

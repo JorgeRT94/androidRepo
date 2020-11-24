@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PM_EJ1</string>
+    <string name="hexagono">Hexagono</string>
+    <string name="circulo">Circulo</string>
+    <string name="rectangulo">Rectangulo</string>
+    <string name="trapecio">Trapecio</string>
+    <string name="triangulo">Triangulo</string>
+    <string name="pentagono">Pentagono</string>
+    <string name="imgcirculo">imgCirculo</string>
+    <string name="base">Base</string>
+    <string name="altura">Altura</string>
+    <string name="resultado">Resultado</string>
+    <string name="calcular">Calcular</string>
+    <string name="radio">Radio</string>
+    <string name="lados">Tamaño de los lados</string>
+    <string name="apotema">Apotema</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/jrtStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".EditarProducto">
+
+    <EditText
+        android:id="@+id/txtEditNombre"
+        android:layout_width="226dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="@dimen/separacionTop"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nombreProductoEdit"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEditPrecio"
+        android:layout_width="226dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="@dimen/separacionTop"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/precioProductoEdit"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditNombre" />
+
+    <RatingBar
+        android:id="@+id/rtBarEditRating"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/separacionTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewEditProvincias" />
+
+    <Switch
+        android:id="@+id/swEditFragil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/separacionTop"
+        android:layout_marginEnd="@dimen/separacionLateral"
+        android:text="@string/swFragilEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spEditProveedores" />
+
+    <RadioGroup
+        android:id="@+id/rdGroupEdit"
+        android:layout_width="127dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="@dimen/separacionLateral"
+        android:layout_marginTop="@dimen/separacionTop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swEditFragil">
+
+        <RadioButton
+            android:id="@+id/rdBtnEditCaja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rdButtonCaja" />
+
+        <RadioButton
+            android:id="@+id/rdBtnEditBolsa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rdButtonBolsa" />
+
+        <RadioButton
+            android:id="@+id/rdBtnEditBrick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rdButtonBrick" />
+
+        <RadioButton
+            android:id="@+id/rdBtnEditPack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rdButtonPack" />
+
+        <RadioButton
+            android:id="@+id/rdBtnEditOtro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rdButtonOtro" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/listViewEditProvincias"
+        android:layout_width="175dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="@dimen/separacionTop"
+        android:layout_marginEnd="@dimen/separacionLateral"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swEditFragil" />
+
+    <Spinner
+        android:id="@+id/spEditProveedores"
+        android:layout_width="273dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="@dimen/separacionTop"
+        android:layout_marginEnd="1dp"
+        android:contextClickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditPrecio" />
+
+    <Button
+        android:id="@+id/btnGuardarEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/separacionTop"
+        android:layout_marginEnd="@dimen/separacionLateral"
+        android:text="@string/btnEditGuardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rtBarEditRating" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/separacionLateral"
+        android:layout_marginTop="@dimen/separacionTop"
+        android:text="@string/borrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rtBarEditRating" />
+</androidx.constraintlayout.widget.ConstraintLayout>

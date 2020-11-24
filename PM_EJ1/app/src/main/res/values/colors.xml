@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="veige">#EFE4C1</color>
+    <color name="azul">#C2E4F3</color>
+    <color name="verde">#DBF3C1</color>
+    <color name="naranja">#F6DEBC</color>
+    <color name="rosa">#F3D6E0</color>
+    <color name="morado">#F2CCF8</color>
+</resources>
